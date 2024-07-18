@@ -27,11 +27,10 @@ function App() {
       <BlockStack padding={"base"} border={'base'}>
         <TextBlock>
           <Text>{description}</Text>
-          
         </TextBlock>
         <TextBlock inlineAlignment={'end'}>
-          <Link to={link}>
-              <Image source={image} border={'base'} />
+          <Link to={link} external={true}>
+              <Image source={image} border={'base'} fit={'contain'} />
           </Link>
           <Link to={linkFind}>What is GovX ID?</Link>
         </TextBlock>
